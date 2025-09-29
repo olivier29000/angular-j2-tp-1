@@ -5,6 +5,8 @@
   <option [ngValue]="'NOIR'">NOIR</option>
   <option [ngValue]="'GRIS'">GRIS</option>
 </select>
+<p *ngIf = "newChat.age > 15"> Wahou il est vieux votre chat</p>
+<p *ngIf = "newChat.age < 0"> Il n'est pas encore né votre chat ? </p>
 <button (click)="ajouterNewChat()">Ajouter</button>
 
 <br>
